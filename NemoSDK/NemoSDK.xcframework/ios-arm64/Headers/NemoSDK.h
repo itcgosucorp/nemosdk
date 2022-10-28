@@ -6,18 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UserProfile.h"
-#import "AuthUserDelegate.h"
+#import "LoginDelegate.h"
 
 @interface NemoSDK : NSObject{
 }
 
 + (NemoSDK *)sharedInstance;
--(void)sdkInit;
--(void)authorization:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
--(void)authorizationSimple:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
--(void)getMe:(AuthResponse *)authToken andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
-- (void) signInSimpleWithViewController:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
-- (void) signInWithViewController:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
-- (void)signOut:(UIViewController *)viewController;
+@property (nonatomic,strong) UIViewController *viewController;
+@property (nonatomic,strong) id<LoginDelegate> loginDelegate;
+
+-(void)sdkInit:(UIViewController<LoginDelegate> *)viewControllerDelegate;
+-(void)sdkInit:(UIViewController *)viewController andLoginDelegate:(id<LoginDelegate>) loginDelegate;
+- (void)login;
+- (void)logout;
+- (NSString *)getUserInfo;
+
+- (void) login:(UIViewController<LoginDelegate> *)viewControllerDelegate;
+- (void)login:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
+- (void)logout:(UIViewController *)viewController;
 @end

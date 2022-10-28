@@ -9,7 +9,6 @@
 #import "SdkHelper.h"
 
 @interface ViewController () {
-    AuthResponse *authResponse;
     BOOL isSignIn;
 }
     
@@ -21,59 +20,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [[NemoSDK sharedInstance] sdkInit:self];
 }
 
 
-- (IBAction)signInSimpleAndGetMe:(id)sender {
-    self->isSignIn = YES;
-    [[NemoSDK sharedInstance] signInSimpleWithViewController:self andDelegate:self];
+- (IBAction)getUserInfo:(id)sender {
+    NSLog(@"userInfo = %@", [[NemoSDK sharedInstance] getUserInfo]);
+    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"Alert" andWithMessage:[[NemoSDK sharedInstance] getUserInfo] andCallback:nil];
 }
 
-- (IBAction)signInAndGetMe:(id)sender {
-    self->isSignIn = YES;
-    [[NemoSDK sharedInstance] signInWithViewController:self andDelegate:self];
-}
-
-- (IBAction)getMe:(id)sender {
-    [[NemoSDK sharedInstance] getMe:self->authResponse andDelegate:self];
-}
-
-- (IBAction)authorizationSimple:(id)sender {
+- (IBAction)login:(id)sender {
     self->isSignIn = NO;
-    [[NemoSDK sharedInstance] authorizationSimple:self andDelegate:self];
-}
-
-- (IBAction)authorization:(id)sender {
-    self->isSignIn = NO;
-    [[NemoSDK sharedInstance] authorization:self andDelegate:self];
+    [[NemoSDK sharedInstance] login];
 }
 - (IBAction)signOut:(id)sender {
-    [[NemoSDK sharedInstance] signOut:self];
+    [[NemoSDK sharedInstance] logout];
 }
 
-- (void)getAuthUserFail:(NSError *)error {
-    NSLog(@"getAuthUserFail = %@", error);
-    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"Alert" andWithMessage:[NSString stringWithFormat:@"Lấy thông tin thất bại, %@", error.description] andCallback:nil];
-    
+- (void)onLoginFailure:(NSString *)message {
+    NSLog(@"onLoginFailure = %@", message);
+    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"onLoginFailure" andWithMessage:message andCallback:nil];
 }
 
-- (void)getAuthUserSuccess:(UserProfile *)data {
-    NSLog(@"getAuthUserSuccess = %@", data);
-    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"Alert" andWithMessage:[NSString stringWithFormat:@"Xin chao, %@", data.email] andCallback:nil];
+- (void)onLoginSuccess:(NSString *)access_token andIdToken:(NSString *)id_token {
+    NSLog(@"onLoginSuccess = %@ - %@", access_token, id_token);
+    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"onLoginSuccess" andWithMessage:access_token andCallback:nil];
 }
 
-- (void)loginFail:(NSError *)error {
-    NSLog(@"loginFail = %@", error);
-    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"Alert" andWithMessage:[NSString stringWithFormat:@"Dang nhap that bai, %@", error.description] andCallback:nil];
+- (void)onLogoutFailure:(NSString *)message {
+    NSLog(@"onLogoutFailure = %@", message);
 }
 
-- (void)loginSuccess:(AuthResponse *)data {
-    NSLog(@"loginSuccess = %@", data.accessToken);
-    if(!self->isSignIn) {
-        [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"Alert" andWithMessage:[NSString stringWithFormat:@"Dang nhap thanh cong"] andCallback:nil];
-    }
-    self->authResponse = data;
+- (void)onLogoutSuccess:(NSString *)message {
+    NSLog(@"onLogoutSuccess = %@", message);
+    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"onLogoutSuccess" andWithMessage:message andCallback:nil];
 }
 
 @end

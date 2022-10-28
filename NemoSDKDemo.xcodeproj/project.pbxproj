@@ -14,9 +14,9 @@
 		CE5EABB22908CED200B62253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5EABB12908CED200B62253 /* Assets.xcassets */; };
 		CE5EABB52908CED200B62253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EABB32908CED200B62253 /* LaunchScreen.storyboard */; };
 		CE5EABB82908CED200B62253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EABB72908CED200B62253 /* main.m */; };
-		CE5EAC292908E0B100B62253 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EAC272908E0B100B62253 /* AppAuth.xcframework */; };
-		CE5EAC2A2908E0B100B62253 /* NemoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EAC282908E0B100B62253 /* NemoSDK.xcframework */; };
-		CE5EAC2B2908E10F00B62253 /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EAC272908E0B100B62253 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE5EAC38290BCD2700B62253 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EAC36290BCD2700B62253 /* AppAuth.xcframework */; };
+		CE5EAC39290BCD2700B62253 /* NemoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EAC37290BCD2700B62253 /* NemoSDK.xcframework */; };
+		CE5EAC3A290BCD3100B62253 /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EAC36290BCD2700B62253 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE5EAC2B2908E10F00B62253 /* AppAuth.xcframework in Embed Frameworks */,
+				CE5EAC3A290BCD3100B62253 /* AppAuth.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,8 +46,8 @@
 		CE5EABB42908CED200B62253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5EABB62908CED200B62253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5EABB72908CED200B62253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE5EAC272908E0B100B62253 /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppAuth.xcframework; sourceTree = "<group>"; };
-		CE5EAC282908E0B100B62253 /* NemoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDK.xcframework; sourceTree = "<group>"; };
+		CE5EAC36290BCD2700B62253 /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppAuth.xcframework; sourceTree = "<group>"; };
+		CE5EAC37290BCD2700B62253 /* NemoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5EAC292908E0B100B62253 /* AppAuth.xcframework in Frameworks */,
-				CE5EAC2A2908E0B100B62253 /* NemoSDK.xcframework in Frameworks */,
+				CE5EAC38290BCD2700B62253 /* AppAuth.xcframework in Frameworks */,
+				CE5EAC39290BCD2700B62253 /* NemoSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,6 @@
 		CE5EAB992908CED100B62253 = {
 			isa = PBXGroup;
 			children = (
-				CE5EAC262908E0B100B62253 /* NemoSDK */,
 				CE5EABA42908CED100B62253 /* NemoSDKDemo */,
 				CE5EABA32908CED100B62253 /* Products */,
 			);
@@ -83,6 +82,7 @@
 		CE5EABA42908CED100B62253 /* NemoSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE5EAC35290BCD2700B62253 /* NemoSDK */,
 				CE5EABA52908CED100B62253 /* AppDelegate.h */,
 				CE5EABA62908CED100B62253 /* AppDelegate.m */,
 				CE5EABA82908CED100B62253 /* SceneDelegate.h */,
@@ -98,14 +98,14 @@
 			path = NemoSDKDemo;
 			sourceTree = "<group>";
 		};
-		CE5EAC262908E0B100B62253 /* NemoSDK */ = {
+		CE5EAC35290BCD2700B62253 /* NemoSDK */ = {
 			isa = PBXGroup;
 			children = (
-				CE5EAC272908E0B100B62253 /* AppAuth.xcframework */,
-				CE5EAC282908E0B100B62253 /* NemoSDK.xcframework */,
+				CE5EAC36290BCD2700B62253 /* AppAuth.xcframework */,
+				CE5EAC37290BCD2700B62253 /* NemoSDK.xcframework */,
 			);
 			path = NemoSDK;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 

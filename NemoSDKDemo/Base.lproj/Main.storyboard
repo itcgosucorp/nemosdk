@@ -21,54 +21,27 @@
                                 <rect key="frame" x="70" y="125" width="235" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Authorization"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
-                                    <action selector="authorization:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCf-Th-Mab"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryN-WL-VHH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by2-mJ-ez8">
                                 <rect key="frame" x="70" y="173" width="235" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Authorization Simple"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get User Info"/>
                                 <connections>
-                                    <action selector="authorizationSimple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p8i-Fm-11T"/>
+                                    <action selector="getUserInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ysN-re-XGu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbb-IQ-F9s">
-                                <rect key="frame" x="70" y="221" width="235" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8f-HT-Xxl">
+                                <rect key="frame" x="77" y="404" width="235" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Get Me"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
                                 <connections>
-                                    <action selector="getMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJO-g5-g3h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJt-9H-r1B">
-                                <rect key="frame" x="70" y="267" width="235" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign in &amp; get me"/>
-                                <connections>
-                                    <action selector="signInAndGetMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57b-l7-HhG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GS-4R-0W9">
-                                <rect key="frame" x="70" y="315" width="235" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign in simple &amp; get me"/>
-                                <connections>
-                                    <action selector="signInSimpleAndGetMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfd-1l-FL2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuN-uE-hhc">
-                                <rect key="frame" x="70" y="370" width="235" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign out"/>
-                                <connections>
-                                    <action selector="signOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbR-Ne-l8O"/>
+                                    <action selector="signOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xl-fJ-ky3"/>
                                 </connections>
                             </button>
                         </subviews>
