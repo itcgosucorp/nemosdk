@@ -71,9 +71,10 @@
 //return authorization token
 -(void)authorization:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
 -(void)authorizationSimple:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
+//return user profile
+-(void)getMe:(AuthResponse *)authToken andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
 
 //authorization token and return user profile
--(void)getMe:(AuthResponse *)authToken andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
 - (void) signInSimpleWithViewController:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
 - (void) signInWithViewController:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
 
