@@ -23,5 +23,6 @@
 
 - (void) login:(UIViewController<LoginDelegate> *)viewControllerDelegate;
 - (void)login:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
-- (void)logout:(UIViewController *)viewController;
+- (void)logout:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
+- (void)logoutBackground:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
 @end

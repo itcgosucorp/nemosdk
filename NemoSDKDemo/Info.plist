@@ -9,12 +9,16 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>nemo.app:/oauth2redirect</string>
+				<string>nemo.app.9dnft.ios</string>
 			</array>
 		</dict>
 	</array>
 	<key>ClientID</key>
-	<string>nemo-sdk</string>
+	<string>64bca355-61f8-40d5-b495-550048ebbcb5.nemoverse</string>
+	<key>NemoScope</key>
+	<string>openid email phone_number profile offline_access</string>
+	<key>NemoUrl</key>
+	<string>https://gid.nemoverse.io</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

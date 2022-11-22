@@ -34,7 +34,8 @@
     [[NemoSDK sharedInstance] login];
 }
 - (IBAction)signOut:(id)sender {
-    [[NemoSDK sharedInstance] logout];
+//    [[NemoSDK sharedInstance] logout:self andDelegate:self];
+    [[NemoSDK sharedInstance] logoutBackground:self andDelegate:self];
 }
 
 - (void)onLoginFailure:(NSString *)message {
@@ -53,7 +54,6 @@
 
 - (void)onLogoutSuccess:(NSString *)message {
     NSLog(@"onLogoutSuccess = %@", message);
-    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"onLogoutSuccess" andWithMessage:message andCallback:nil];
 }
 
 @end
