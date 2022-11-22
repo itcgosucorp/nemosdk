@@ -30,56 +30,51 @@
    </array>
   ```
 # API description and usage
-## Initialize GinSDK
-```objectivec
-#import "NemoSDK.h"
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[NemoSDK sharedInstance] sdkInit];
-    //...
-}
-```
-## Initialize SDK delegate
+## Initialize NemoSDK
 ```objectivec
 //ViewController.h
 #import "NemoSDK.h"
-@interface ViewController : UIViewController<AuthUserDelegate>
+@interface ViewController : UIViewController<LoginDelegate>
 
 @end
 ```
 ```objectivec
 //ViewController.m
-#pragma Auth User Delegate
-- (void)getAuthUserFail:(NSError *)error {
-    NSLog(@"getAuthUserFail = %@", error);
+# # Initialize GinSDK
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [[NemoSDK sharedInstance] sdkInit:self];
+}
+#pragma Login Delegate
+- (void)onLoginFailure:(NSString *)message {
+    NSLog(@"onLoginFailure = %@", message);
 }
 
-- (void)getAuthUserSuccess:(UserProfile *)data {
-    NSLog(@"getAuthUserSuccess = %@", data);
+- (void)onLoginSuccess:(NSString *)access_token andIdToken:(NSString *)id_token {
+    NSLog(@"onLoginSuccess = %@ - %@", access_token, id_token);
 }
 
-- (void)loginFail:(NSError *)error {
-    NSLog(@"loginFail = %@", error);
+- (void)onLogoutFailure:(NSString *)message {
+    NSLog(@"onLogoutFailure = %@", message);
 }
 
-- (void)loginSuccess:(AuthResponse *)data {
-    NSLog(@"loginSuccess = %@", data.accessToken);
+- (void)onLogoutSuccess:(NSString *)message {
+    NSLog(@"onLogoutSuccess = %@", message);
 }
 ```
 
 ## Authorization Interface
 ```objectivec
-//return authorization token
--(void)authorization:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
--(void)authorizationSimple:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
-//return user profile
--(void)getMe:(AuthResponse *)authToken andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
+//ViewController.m
+//return onLoginSuccess/onLoginFailure delegate
+[[NemoSDK sharedInstance] login];
 
-//authorization token and return user profile
-- (void) signInSimpleWithViewController:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
-- (void) signInWithViewController:(UIViewController *)viewController andDelegate:(id<AuthUserDelegate>) _authUserDelegate;
+//return json string
+[[NemoSDK sharedInstance] getUserInfo]
 
-//use as Logout Delegate
-- (void)signOut:(UIViewController *)viewController;
+//use as onLogoutFailure/onLogoutSuccess Delegate
+[[NemoSDK sharedInstance] logout];
 ```
 
 By using the NemoSDK for iOS you agree to these terms.
