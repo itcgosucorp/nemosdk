@@ -19,6 +19,10 @@
   ```xml
    <key>ClientID</key>
    <string>[ClientID]</string>
+   <key>NemoScope</key>
+   <string>openid email phone_number profile offline_access</string>
+   <key>NemoUrl</key>
+   <string>[Nemo Url]</string>
    <key>CFBundleURLTypes</key>
    <array>
     <dict>
