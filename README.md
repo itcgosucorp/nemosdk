@@ -29,6 +29,9 @@
     </dict>
    </array>
   ```
+### AppAuth Framework Embed
+![photo_2022-11-23_11-38-37](https://user-images.githubusercontent.com/94542020/203470313-a5eed93b-1e10-43cd-bee2-bf95c4bd5768.jpg)
+
 # API description and usage
 ## Initialize NemoSDK
 ```objectivec
