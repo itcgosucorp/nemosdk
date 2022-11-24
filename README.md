@@ -22,7 +22,7 @@
    <key>NemoScope</key>
    <string>openid email phone_number profile offline_access</string>
    <key>NemoUrl</key>
-   <string>[Nemo Url]</string>
+   <string>https://gid.nemoverse.io</string>
    <key>CFBundleURLTypes</key>
    <array>
     <dict>
