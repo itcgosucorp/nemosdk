@@ -22,20 +22,20 @@
    <key>NemoScope</key>
    <string>openid email phone_number profile offline_access</string>
    <key>NemoUrl</key>
-   <string>[Nemo Url]</string>
+   <string>[Nemo Server Url]</string>
    <key>CFBundleURLTypes</key>
    <array>
     <dict>
        <key>CFBundleURLSchemes</key>
        <array>
-          <string>[NemoUrl Scheme]</string>
+          <string>[Nemo RedirectUrl Scheme]</string>
        </array>
     </dict>
    </array>
   ```
-  Example: 
-  + [Nemo Url] = https://test.nemoserver.io
-  + [NemoUrl Scheme] = nemo.app.demo.app
+  - [Nemo Server Url]: Nemo server url (example: https://test.nemoserver.io)
+  - [Nemo RedirectUrl Scheme]: use redirect_url and end_session_redirect_uri (example: nemo.app.demo.app)
+  
 ### AppAuth Framework Embed
 ![photo_2022-11-23_11-38-37](https://user-images.githubusercontent.com/94542020/203470313-a5eed93b-1e10-43cd-bee2-bf95c4bd5768.jpg)
 
