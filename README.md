@@ -22,7 +22,7 @@
    <key>NemoScope</key>
    <string>openid email phone_number profile offline_access</string>
    <key>NemoUrl</key>
-   <string>https://test.nemoserver.io</string>
+   <string>[Nemo Url]</string>
    <key>CFBundleURLTypes</key>
    <array>
     <dict>
@@ -33,6 +33,9 @@
     </dict>
    </array>
   ```
+  Example: 
+  + [Nemo Url] = https://test.nemoserver.io
+  + [NemoUrl Scheme] = nemo.app.demo.app
 ### AppAuth Framework Embed
 ![photo_2022-11-23_11-38-37](https://user-images.githubusercontent.com/94542020/203470313-a5eed93b-1e10-43cd-bee2-bf95c4bd5768.jpg)
 
