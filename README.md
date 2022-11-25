@@ -17,99 +17,46 @@
 
 ### Configure NemoSignIn in your project (default info.plist)
   ```xml
-   <key>ClientID</key>
-   <string>[ClientID]</string>
-   <key>NemoScope</key>
-   <string>openid email phone_number profile offline_access</string>
-   <key>NemoUrl</key>
-   <string>[Nemo Server Url]</string>
-   <key>CFBundleURLTypes</key>
-   <array>
-    <dict>
-       <key>CFBundleURLSchemes</key>
-       <array>
-          <string>[Nemo RedirectUrl Scheme]</string>
-       </array>
-    </dict>
-   </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>[RedirectURL/EndSessionEndpoint]</string>
+        </array>
+      </dict>
+    </array>
+    <key>ClientID</key>
+    <string>[ClientID]</string>
+    <key>AuthorizationScope</key>
+    <string>openid email phone_number profile offline_access</string>
+    <key>Issuer</key>
+    <string>[Issuer]</string>
   ```
-  - [Nemo Server Url]: Nemo server url (example: https://test.nemoserver.io)
-  - [Nemo RedirectUrl Scheme]: use redirect_url and end_session_redirect_uri (example: nemo.app.demo.app)
+  - Issuer: The fully qualified issuer URL of the server (example: https://gid-uat.nemoverse.io)
+  - [RedirectURL/EndSessionEndpoint]: URL Schemes (example: nemo.app.demo.app)
   
 ### AppAuth Framework Embed
 ![photo_2022-11-23_11-38-37](https://user-images.githubusercontent.com/94542020/203470313-a5eed93b-1e10-43cd-bee2-bf95c4bd5768.jpg)
 
-# API description and usage (initSDK from AppDelegate)
+# API description and usage
 ## Initialize NemoSDK
 ```objectivec
-//AppDelegate.m
+//AppDelegate.h
 #import "NemoSDK.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate, LoginDelegate>
+@end
 
+//AppDelegate.m
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[NemoSDK sharedInstance] sdkInit:nil];
+    [[NemoSDK sharedInstance] sdkInit];
+    [NemoSDK sharedInstance].loginDelegate = self;
     return YES;
 }
-```
-```objectivec
-//ViewController.h
-#import "NemoSDK.h"
-@interface ViewController : UIViewController<LoginDelegate>
-
-@end
-
-//ViewController.m
-# # Initialize GinSDK
 
 #pragma Login Delegate
-- (void)onLoginFailure:(NSString *)message {
-    NSLog(@"onLoginFailure = %@", message);
-}
 
-- (void)onLoginSuccess:(NSString *)access_token andIdToken:(NSString *)id_token {
-    NSLog(@"onLoginSuccess = %@ - %@", access_token, id_token);
-}
-
-- (void)onLogoutFailure:(NSString *)message {
-    NSLog(@"onLogoutFailure = %@", message);
-}
-
-- (void)onLogoutSuccess:(NSString *)message {
-    NSLog(@"onLogoutSuccess = %@", message);
-}
-```
-
-## Authorization Interface
-```objectivec
-//ViewController.m
-//return onLoginSuccess/onLoginFailure delegate
-[[NemoSDK sharedInstance] login:self andDelegate:self];
-
-//return json string
-[[NemoSDK sharedInstance] getUserInfo]
-
-//use as onLogoutFailure/onLogoutSuccess Delegate
-[[NemoSDK sharedInstance] logoutBackground:self andDelegate:self];
-```
-
-# API description and usage (No initSDK from AppDelegate)
-## Initialize NemoSDK
-```objectivec
-//ViewController.h
-#import "NemoSDK.h"
-@interface ViewController : UIViewController<LoginDelegate>
-
-@end
-```
-```objectivec
-//ViewController.m
-# # Initialize GinSDK
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [[NemoSDK sharedInstance] sdkInit:self];
-}
-#pragma Login Delegate
 - (void)onLoginFailure:(NSString *)message {
     NSLog(@"onLoginFailure = %@", message);
 }
