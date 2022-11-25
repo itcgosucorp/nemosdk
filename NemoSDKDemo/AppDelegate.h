@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "NemoSDK.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, LoginDelegate>
 
 
 @end

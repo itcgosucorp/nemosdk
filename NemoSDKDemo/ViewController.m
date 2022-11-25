@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[NemoSDK sharedInstance] sdkInit:self];
+//    [[NemoSDK sharedInstance] sdkInit:self];
 }
 
 
@@ -31,29 +31,12 @@
 
 - (IBAction)login:(id)sender {
     self->isSignIn = NO;
+//    [[NemoSDK sharedInstance] login];
     [[NemoSDK sharedInstance] login];
 }
 - (IBAction)signOut:(id)sender {
 //    [[NemoSDK sharedInstance] logout:self andDelegate:self];
-    [[NemoSDK sharedInstance] logoutBackground:self andDelegate:self];
-}
-
-- (void)onLoginFailure:(NSString *)message {
-    NSLog(@"onLoginFailure = %@", message);
-    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"onLoginFailure" andWithMessage:message andCallback:nil];
-}
-
-- (void)onLoginSuccess:(NSString *)access_token andIdToken:(NSString *)id_token {
-    NSLog(@"onLoginSuccess = %@ - %@", access_token, id_token);
-    [[SdkHelper sharedInstance] showAlertMessage:self andWithTitle:@"onLoginSuccess" andWithMessage:access_token andCallback:nil];
-}
-
-- (void)onLogoutFailure:(NSString *)message {
-    NSLog(@"onLogoutFailure = %@", message);
-}
-
-- (void)onLogoutSuccess:(NSString *)message {
-    NSLog(@"onLogoutSuccess = %@", message);
+    [[NemoSDK sharedInstance] logout];
 }
 
 @end

@@ -7,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import "NemoSDK.h"
-@interface ViewController : UIViewController<LoginDelegate>
+@interface ViewController : UIViewController
 
 @end

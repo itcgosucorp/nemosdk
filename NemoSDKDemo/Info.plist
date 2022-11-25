@@ -7,18 +7,20 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>nemo.app.9dnft.ios</string>
+				<string>nemo.app.marswar.ios</string>
 			</array>
 		</dict>
 	</array>
 	<key>ClientID</key>
-	<string>64bca355-61f8-40d5-b495-550048ebbcb5.nemoverse</string>
-	<key>NemoScope</key>
+	<string>marswar_nemoverse</string>
+	<key>AuthorizationScope</key>
 	<string>openid email phone_number profile offline_access</string>
-	<key>NemoUrl</key>
-	<string>https://gid.nemoverse.io</string>
+	<key>Issuer</key>
+	<string>https://gid-uat.nemoverse.io</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

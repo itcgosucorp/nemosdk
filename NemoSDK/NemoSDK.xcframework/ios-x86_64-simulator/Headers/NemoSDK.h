@@ -12,17 +12,14 @@
 }
 
 + (NemoSDK *)sharedInstance;
-@property (nonatomic,strong) UIViewController *viewController;
 @property (nonatomic,strong) id<LoginDelegate> loginDelegate;
 
--(void)sdkInit:(UIViewController<LoginDelegate> *)viewControllerDelegate;
--(void)sdkInit:(UIViewController *)viewController andLoginDelegate:(id<LoginDelegate>) loginDelegate;
-- (void)login;
-- (void)logout;
+-(void)sdkInit;
 - (NSString *)getUserInfo;
 
-- (void) login:(UIViewController<LoginDelegate> *)viewControllerDelegate;
-- (void)login:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
-- (void)logout:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
-- (void)logoutBackground:(UIViewController *)viewController andDelegate:(id<LoginDelegate>) loginDelegate;
+- (void)login;
+- (void)logout;
+//with uiViewController
+- (void)login:(UIViewController *)viewController;
+- (void)logout:(UIViewController *)viewController;
 @end
