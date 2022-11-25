@@ -19,17 +19,80 @@
   ```xml
    <key>ClientID</key>
    <string>[ClientID]</string>
+   <key>NemoScope</key>
+   <string>openid email phone_number profile offline_access</string>
+   <key>NemoUrl</key>
+   <string>[Nemo Server Url]</string>
    <key>CFBundleURLTypes</key>
    <array>
     <dict>
        <key>CFBundleURLSchemes</key>
        <array>
-          <string>[NemoUrl Scheme]</string>
+          <string>[Nemo RedirectUrl Scheme]</string>
        </array>
     </dict>
    </array>
   ```
-# API description and usage
+  - [Nemo Server Url]: Nemo server url (example: https://test.nemoserver.io)
+  - [Nemo RedirectUrl Scheme]: use redirect_url and end_session_redirect_uri (example: nemo.app.demo.app)
+  
+### AppAuth Framework Embed
+![photo_2022-11-23_11-38-37](https://user-images.githubusercontent.com/94542020/203470313-a5eed93b-1e10-43cd-bee2-bf95c4bd5768.jpg)
+
+# API description and usage (initSDK from AppDelegate)
+## Initialize NemoSDK
+```objectivec
+//AppDelegate.m
+#import "NemoSDK.h"
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    [[NemoSDK sharedInstance] sdkInit:nil];
+    return YES;
+}
+```
+```objectivec
+//ViewController.h
+#import "NemoSDK.h"
+@interface ViewController : UIViewController<LoginDelegate>
+
+@end
+
+//ViewController.m
+# # Initialize GinSDK
+
+#pragma Login Delegate
+- (void)onLoginFailure:(NSString *)message {
+    NSLog(@"onLoginFailure = %@", message);
+}
+
+- (void)onLoginSuccess:(NSString *)access_token andIdToken:(NSString *)id_token {
+    NSLog(@"onLoginSuccess = %@ - %@", access_token, id_token);
+}
+
+- (void)onLogoutFailure:(NSString *)message {
+    NSLog(@"onLogoutFailure = %@", message);
+}
+
+- (void)onLogoutSuccess:(NSString *)message {
+    NSLog(@"onLogoutSuccess = %@", message);
+}
+```
+
+## Authorization Interface
+```objectivec
+//ViewController.m
+//return onLoginSuccess/onLoginFailure delegate
+[[NemoSDK sharedInstance] login:self andDelegate:self];
+
+//return json string
+[[NemoSDK sharedInstance] getUserInfo]
+
+//use as onLogoutFailure/onLogoutSuccess Delegate
+[[NemoSDK sharedInstance] logoutBackground:self andDelegate:self];
+```
+
+# API description and usage (No initSDK from AppDelegate)
 ## Initialize NemoSDK
 ```objectivec
 //ViewController.h
