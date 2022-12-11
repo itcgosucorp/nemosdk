@@ -39,8 +39,7 @@
   - [RedirectURL/EndSessionEndpoint]: URL Schemes (example: nemo.app.demo.app)
   
 #### AppAuth Framework Embed
-<img width="460" alt="image" src="https://user-images.githubusercontent.com/94542020/206898183-f1be0527-6136-4e91-9f2e-174c2a3eaf77.png">
-
+<img width="430" alt="image" src="https://user-images.githubusercontent.com/94542020/206900969-0d1d3068-63db-4110-96c5-7ee5e9ac94ec.png">
 
 ### API description and usage
 #### Initialize NemoSDK
@@ -91,5 +90,24 @@
 ```
 
 ## Integrate NemoSDK Tracking:
+#### NemoSDKTracking Framework Embed
+<img width="438" alt="image" src="https://user-images.githubusercontent.com/94542020/206900843-537c88a2-e902-4d86-b557-c53f6462fb99.png">
 
+```objectivec
+//AppDelegate.m
+#import "NemoSDKTracking.h"
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[NemoSDKTracking sharedInstance] initTracking:application];
+}
+```
+#### Tracking Interface
+```objectivec
+[[NemoSDKTracking AppsFlyer] trackingEventLoginOnAF:@"userId" andAccount:@"neropro"];
+[[NemoSDKTracking AppsFlyer] trackingEventOnAF:@"event_abc" withValues:@{
+    @"key1": @"nero1",
+    @"key2": @"nero2"
+}];
+[[NemoSDKTracking AppsFlyer] trackingLevelArchiveEventOnAF:@"userId" andAccount:@"nerocasten" andLevel:@"12301"];
+```
 By using the NemoSDK for iOS you agree to these terms.
