@@ -11,7 +11,7 @@
   - Tracking: AppsFlyer
   - You will need some included keys: ClientID, Issuer, AuthorizationScope, AppsFlyerDevKey, AppsFylerAppleID and UrlScheme into info.plist
   
-# Integrate NemoSDK Core:
+## Integrate NemoSDK Core:
 
 - Embed NemoSDK latest version and Third party framework into your project
 - Some other libraries: 
@@ -89,5 +89,7 @@
 //use as onLogoutFailure/onLogoutSuccess Delegate
 [[NemoSDK sharedInstance] logout];
 ```
+
+## Integrate NemoSDK Tracking:
 
 By using the NemoSDK for iOS you agree to these terms.
