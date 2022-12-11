@@ -53,10 +53,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[NemoSDK sharedInstance] sdkInit];
-    [NemoSDK sharedInstance].loginDelegate = self;
     return YES;
 }
-
+- (void)viewDidLoad
+{
+    [NemoSDK sharedInstance].loginDelegate = self;
+}
 #pragma Login Delegate
 
 - (void)onLoginFailure:(NSString *)message {
@@ -79,6 +81,8 @@
 #### Authorization Interface
 ```objectivec
 //ViewController.m
+[NemoSDK sharedInstance].loginDelegate = self;
+
 //return onLoginSuccess/onLoginFailure delegate
 [[NemoSDK sharedInstance] login];
 
