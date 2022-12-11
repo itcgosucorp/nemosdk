@@ -1,0 +1,6 @@
+framework module NemoSDKTracking {
+  umbrella header "NemoSDKTracking.h"
+
+  export *
+  module * { export * }
+}

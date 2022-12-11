@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A5528C3211B324700F7E933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5528C2211B324700F7E933 /* LaunchScreen.storyboard */; };
+		8A5528C5211B330000F7E933 /* ap_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5528C4211B330000F7E933 /* ap_logo.png */; };
+		8A8334DD21006C00007200B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8334DC21006C00007200B0 /* AppDelegate.m */; };
+		8A8334E521006C01007200B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8334E421006C01007200B0 /* Assets.xcassets */; };
+		8A8334EB21006C01007200B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8334EA21006C01007200B0 /* main.m */; };
+		8A83351621006CD2007200B0 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8334F521006CD2007200B0 /* bg.jpg */; };
+		8A83351721006CD2007200B0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8334F921006CD2007200B0 /* MainViewController.m */; };
+		8A83351821006CD2007200B0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8334FA21006CD2007200B0 /* MainViewController.xib */; };
+		8A83352621006DCC007200B0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A83352521006DCC007200B0 /* MessageUI.framework */; };
+		8A83352821006DD4007200B0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A83352721006DD4007200B0 /* SystemConfiguration.framework */; };
+		8A83352A21006DDA007200B0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A83352921006DDA007200B0 /* MobileCoreServices.framework */; };
+		8A9A52D0212D1C6D0097A25C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9A52CF212D1C6D0097A25C /* MediaPlayer.framework */; };
+		8AB17D99239FCD6D0057AED5 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB17D98239FCD6D0057AED5 /* AuthenticationServices.framework */; };
+		CE2D707B2542CBE400499913 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2D707A2542CBE400499913 /* GoogleService-Info.plist */; };
+		CED10E2B294571580089D06F /* NemoSDKTracking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E20294571580089D06F /* NemoSDKTracking.xcframework */; };
+		CED10E2C294571580089D06F /* NemoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E21294571580089D06F /* NemoSDK.xcframework */; };
+		CED10E2D29457D840089D06F /* NemoSDKTracking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E20294571580089D06F /* NemoSDKTracking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CED10E2E29457D840089D06F /* NemoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E21294571580089D06F /* NemoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CED10E3029457DCC0089D06F /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E2F29457DCC0089D06F /* AppAuth.xcframework */; };
+		CED10E3129457DE70089D06F /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E2F29457DCC0089D06F /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEE10E9D27E0918C00129EBC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE354F525B31CD00008F412 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE82110F26A7C17700729078 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CED10E2D29457D840089D06F /* NemoSDKTracking.xcframework in Embed Frameworks */,
+				CED10E2E29457D840089D06F /* NemoSDK.xcframework in Embed Frameworks */,
+				CED10E3129457DE70089D06F /* AppAuth.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A5528C2211B324700F7E933 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A5528C4211B330000F7E933 /* ap_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ap_logo.png; sourceTree = "<group>"; };
+		8A8334D821006C00007200B0 /* TienKiemMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TienKiemMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8334DB21006C00007200B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A8334DC21006C00007200B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A8334E421006C01007200B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A8334E921006C01007200B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A8334EA21006C01007200B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A8334F521006CD2007200B0 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		8A8334F821006CD2007200B0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8A8334F921006CD2007200B0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8A8334FA21006CD2007200B0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8A83352521006DCC007200B0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8A83352721006DD4007200B0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8A83352921006DDA007200B0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8A97A1BF233F03C20025F418 /* DemoSDK_AppStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoSDK_AppStore.entitlements; sourceTree = "<group>"; };
+		8A9A52CF212D1C6D0097A25C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8AB17D98239FCD6D0057AED5 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		CE2D707A2542CBE400499913 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CED10E20294571580089D06F /* NemoSDKTracking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDKTracking.xcframework; sourceTree = "<group>"; };
+		CED10E21294571580089D06F /* NemoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDK.xcframework; sourceTree = "<group>"; };
+		CED10E2F29457DCC0089D06F /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppAuth.xcframework; sourceTree = "<group>"; };
+		CEE10E4027E0901F00129EBC /* DemoSDK_AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSDK_AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEE354F525B31CD00008F412 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CEF7BEBB25553C1200E22F64 /* TienKiemMobileDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TienKiemMobileDebug.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A8334D521006C00007200B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE10E9D27E0918C00129EBC /* Accelerate.framework in Frameworks */,
+				8AB17D99239FCD6D0057AED5 /* AuthenticationServices.framework in Frameworks */,
+				CED10E2B294571580089D06F /* NemoSDKTracking.xcframework in Frameworks */,
+				CED10E3029457DCC0089D06F /* AppAuth.xcframework in Frameworks */,
+				CED10E2C294571580089D06F /* NemoSDK.xcframework in Frameworks */,
+				8A9A52D0212D1C6D0097A25C /* MediaPlayer.framework in Frameworks */,
+				8A83352A21006DDA007200B0 /* MobileCoreServices.framework in Frameworks */,
+				8A83352821006DD4007200B0 /* SystemConfiguration.framework in Frameworks */,
+				8A83352621006DCC007200B0 /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A8334CF21006C00007200B0 = {
+			isa = PBXGroup;
+			children = (
+				8A8334DA21006C00007200B0 /* DemoSDK_AppStore */,
+				8A83352221006DBE007200B0 /* Frameworks */,
+				8A8334D921006C00007200B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A8334D921006C00007200B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A8334D821006C00007200B0 /* TienKiemMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A8334DA21006C00007200B0 /* DemoSDK_AppStore */ = {
+			isa = PBXGroup;
+			children = (
+				CED10E09294571570089D06F /* NemoSDK */,
+				CEF7BEBB25553C1200E22F64 /* TienKiemMobileDebug.entitlements */,
+				8A97A1BF233F03C20025F418 /* DemoSDK_AppStore.entitlements */,
+				8A8334DB21006C00007200B0 /* AppDelegate.h */,
+				8A8334DC21006C00007200B0 /* AppDelegate.m */,
+				8A8334E421006C01007200B0 /* Assets.xcassets */,
+				8A8334F621006CD2007200B0 /* Classess */,
+				8A8334E921006C01007200B0 /* Info.plist */,
+				8A5528C2211B324700F7E933 /* LaunchScreen.storyboard */,
+				8A8334EA21006C01007200B0 /* main.m */,
+				8A8334F121006CD2007200B0 /* Resources */,
+				CEE10E4027E0901F00129EBC /* DemoSDK_AppStore-Bridging-Header.h */,
+			);
+			path = DemoSDK_AppStore;
+			sourceTree = "<group>";
+		};
+		8A8334F121006CD2007200B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A8334F221006CD2007200B0 /* GameInfo */,
+				8A8334F421006CD2007200B0 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A8334F221006CD2007200B0 /* GameInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D707A2542CBE400499913 /* GoogleService-Info.plist */,
+			);
+			path = GameInfo;
+			sourceTree = "<group>";
+		};
+		8A8334F421006CD2007200B0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8A5528C4211B330000F7E933 /* ap_logo.png */,
+				8A8334F521006CD2007200B0 /* bg.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8A8334F621006CD2007200B0 /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				8A8334F721006CD2007200B0 /* Controller */,
+			);
+			path = Classess;
+			sourceTree = "<group>";
+		};
+		8A8334F721006CD2007200B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A8334F821006CD2007200B0 /* MainViewController.h */,
+				8A8334F921006CD2007200B0 /* MainViewController.m */,
+				8A8334FA21006CD2007200B0 /* MainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A83352221006DBE007200B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE354F525B31CD00008F412 /* Accelerate.framework */,
+				8AB17D98239FCD6D0057AED5 /* AuthenticationServices.framework */,
+				8A9A52CF212D1C6D0097A25C /* MediaPlayer.framework */,
+				8A83352521006DCC007200B0 /* MessageUI.framework */,
+				8A83352921006DDA007200B0 /* MobileCoreServices.framework */,
+				8A83352721006DD4007200B0 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED10E09294571570089D06F /* NemoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CED10E2F29457DCC0089D06F /* AppAuth.xcframework */,
+				CED10E20294571580089D06F /* NemoSDKTracking.xcframework */,
+				CED10E21294571580089D06F /* NemoSDK.xcframework */,
+			);
+			path = NemoSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A8334D721006C00007200B0 /* NemoDemoSDK_AppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A8334EE21006C01007200B0 /* Build configuration list for PBXNativeTarget "NemoDemoSDK_AppStore" */;
+			buildPhases = (
+				8A8334D421006C00007200B0 /* Sources */,
+				8A8334D521006C00007200B0 /* Frameworks */,
+				8A8334D621006C00007200B0 /* Resources */,
+				CE82110F26A7C17700729078 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NemoDemoSDK_AppStore;
+			productName = DemoSDK_AppStore;
+			productReference = 8A8334D821006C00007200B0 /* TienKiemMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A8334D021006C00007200B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Nero Pro";
+				TargetAttributes = {
+					8A8334D721006C00007200B0 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 8A8334D321006C00007200B0 /* Build configuration list for PBXProject "NemoDemoSDK_AppStore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = vi;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				vi,
+			);
+			mainGroup = 8A8334CF21006C00007200B0;
+			productRefGroup = 8A8334D921006C00007200B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A8334D721006C00007200B0 /* NemoDemoSDK_AppStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A8334D621006C00007200B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2D707B2542CBE400499913 /* GoogleService-Info.plist in Resources */,
+				8A83351621006CD2007200B0 /* bg.jpg in Resources */,
+				8A8334E521006C01007200B0 /* Assets.xcassets in Resources */,
+				8A5528C3211B324700F7E933 /* LaunchScreen.storyboard in Resources */,
+				8A5528C5211B330000F7E933 /* ap_logo.png in Resources */,
+				8A83351821006CD2007200B0 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A8334D421006C00007200B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8334EB21006C01007200B0 /* main.m in Sources */,
+				8A83351721006CD2007200B0 /* MainViewController.m in Sources */,
+				8A8334DD21006C00007200B0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A8334EC21006C01007200B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TX8U89X44Q;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "cc3de4b7-fd8d-4311-8266-a8170999d557";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A8334ED21006C01007200B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DUO ONLINE CORPORATION (5BA4MALA2M)";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TX8U89X44Q;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "de127cf1-f1a3-4921-bbc4-77803ee832da";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A8334EF21006C01007200B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_REQUIRED = "";
+				CODE_SIGN_ENTITLEMENTS = DemoSDK_AppStore/TienKiemMobileDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9YP294W27R;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C48HYS5WZ8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GinSDKv1.0.0",
+					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
+					"$(BUILD_DIR)/Debug-iphoneos/include/libs",
+					"$(BUILD_DIR)/Debug-iphoneos/include/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GameSDK",
+				);
+				INFOPLIST_FILE = DemoSDK_AppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Debug-iphoneos/",
+					"$(BUILD_DIR)/Debug-iphoneos/include/GameSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GameSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GinSDKv1.0.0",
+				);
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = sea.gamo.opg2;
+				PRODUCT_NAME = TienKiemMobile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "986 a Son";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 929dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		8A8334F021006C01007200B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_REQUIRED = "";
+				CODE_SIGN_ENTITLEMENTS = DemoSDK_AppStore/DemoSDK_AppStore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C48HYS5WZ8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GinSDKv1.0.0",
+					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
+					"$(BUILD_DIR)/Debug-iphoneos/include/libs",
+					"$(BUILD_DIR)/Debug-iphoneos/include/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GameSDK",
+				);
+				INFOPLIST_FILE = DemoSDK_AppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/SDK_Lib",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/SDK_Lib/include",
+					"$(PROJECT_DIR)/SDK_Lib",
+					"$(PROJECT_DIR)/DemoSDK_AppStore",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GosuSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/SDK_LIB",
+					"$(BUILD_DIR)/Debug-iphoneos/",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/include/GosuSDK",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GameSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GinSDKv1.0.0",
+				);
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = sea.gamo.opg2;
+				PRODUCT_NAME = TienKiemMobile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = 929disprofile;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		CE6BF9E627CE0331008EC577 /* Debug_lmbaoboi */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TX8U89X44Q;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "cc3de4b7-fd8d-4311-8266-a8170999d557";
+				SDKROOT = iphoneos;
+			};
+			name = Debug_lmbaoboi;
+		};
+		CE6BF9E727CE0331008EC577 /* Debug_lmbaoboi */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_REQUIRED = "";
+				CODE_SIGN_ENTITLEMENTS = DemoSDK_AppStore/TienKiemMobileDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5BA4MALA2M;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GinSDKv1.0.0",
+					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
+					"$(BUILD_DIR)/Debug-iphoneos/include/libs",
+					"$(BUILD_DIR)/Debug-iphoneos/include/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GameSDK",
+				);
+				INFOPLIST_FILE = DemoSDK_AppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Debug-iphoneos/",
+					"$(BUILD_DIR)/Debug-iphoneos/include/GameSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GameSDK",
+					"$(PROJECT_DIR)/DemoSDK_AppStore/GinSDKv1.0.0",
+				);
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.megastudio.huyenthoai;
+				PRODUCT_NAME = TienKiemMobile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = 356_digi_dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug_lmbaoboi;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A8334D321006C00007200B0 /* Build configuration list for PBXProject "NemoDemoSDK_AppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8334EC21006C01007200B0 /* Debug */,
+				CE6BF9E627CE0331008EC577 /* Debug_lmbaoboi */,
+				8A8334ED21006C01007200B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A8334EE21006C01007200B0 /* Build configuration list for PBXNativeTarget "NemoDemoSDK_AppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8334EF21006C01007200B0 /* Debug */,
+				CE6BF9E727CE0331008EC577 /* Debug_lmbaoboi */,
+				8A8334F021006C01007200B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A8334D021006C00007200B0 /* Project object */;
+}
