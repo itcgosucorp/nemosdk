@@ -100,8 +100,8 @@
     <key>NSUserTrackingUsageDescription</key>
     <string>This identifier will be used to deliver personalized ads to you.</string>
   ```
-#### 2. AppsFlyerLib Framework Embed
-<img width="481" alt="image" src="https://user-images.githubusercontent.com/94542020/206948974-63591ccb-6631-4032-857c-2104a8775b41.png">
+#### 2. AppsFlyerLib Framework Linker
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/94542020/206951658-1da52338-bcf6-474c-b074-f60f8668e7d9.png">
 
 #### 3. Initialize NemoSDKTracking
 ```objectivec
