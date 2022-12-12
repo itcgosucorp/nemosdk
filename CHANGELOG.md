@@ -1,5 +1,10 @@
-# version 2.0.1
-## Nemo Login
+# Changelog
+All notable changes to this project will be documented in this file.
+
+### Changed
+
+## [2.0.1]
+### Nemo Login
 #### Configure NemoSignIn in your project (default info.plist)
 1. NemoScope key replaced by AuthorizationScope
 2. NemoUrl key replaced by Issuer
