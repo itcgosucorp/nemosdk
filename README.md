@@ -32,6 +32,13 @@
     <string>openid email phone_number profile offline_access</string>
     <key>Issuer</key>
     <string>[Issuer]</string>
+    
+    <key>AppsFlyerAppleID</key>
+    <string>0123456789</string>
+    <key>AppsFlyerKey</key>
+    <string>AppsFlyerKey000001111</string>
+    <key>NSUserTrackingUsageDescription</key>
+	  <string>This identifier will be used to deliver personalized ads to you.</string>
   ```
   - Issuer: The fully qualified issuer URL of the server (example: https://gid-uat.nemoverse.io)
   - [RedirectURL/EndSessionEndpoint]: URL Schemes (example: nemo.app.demo.app)
