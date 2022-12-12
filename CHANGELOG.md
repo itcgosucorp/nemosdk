@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-## [v2.0.1]
+## [v2.0.1](https://github.com/itcgosucorp/nemosdk-ios/releases/tag/v2.0.1)
 ### Nemo Login
 #### Configure NemoSignIn in your project (default info.plist)
 1. NemoScope key replaced by AuthorizationScope
