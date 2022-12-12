@@ -6,9 +6,10 @@
   
 
 #### FEATURES:
-  - Login: Authenticate people with NemoID credentials.
-  - You will need some included keys: ClientID and Url Scheme into info.plist
-  
+  - [Nemo Login: Authenticate people with NemoID credentials.](#integrate-nemosdk)
+  - [Nemo Tracking: Tracking with AppsFlyer](#integrate-nemosdktracking)
+
+<a name="integrate-nemosdk"></a>
 ## Integrate NemoSDK
 
 - Embed NemoSDK latest version and Third party framework into your project
@@ -84,7 +85,7 @@
 //use as onLogoutFailure/onLogoutSuccess Delegate
 [[NemoSDK sharedInstance] logout];
 ```
-
+<a name="integrate-nemosdktracking"></a>
 ## Integrate NemoSDKTracking
 
 - Embed NemoSDKTracking latest version and Third party framework into your project
