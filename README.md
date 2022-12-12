@@ -42,7 +42,7 @@
 #### 3. Initialize NemoSDK
 ```objectivec
 //AppDelegate.h
-#import "NemoSDK.h"
+#import "NemoSDK/NemoSDK.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate, LoginDelegate>
 @end
 
@@ -75,7 +75,6 @@
 
 #### 4. Authorization Interface
 ```objectivec
-//ViewController.m
 //return onLoginSuccess/onLoginFailure delegate
 [[NemoSDK sharedInstance] login];
 
@@ -101,5 +100,27 @@
     <string>This identifier will be used to deliver personalized ads to you.</string>
   ```
 #### 2. AppsFlyerLib Framework Embed
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/94542020/206948974-63591ccb-6631-4032-857c-2104a8775b41.png">
+
+#### 3. Initialize NemoSDKTracking
+```objectivec
+//AppDelegate.m
+#import "NemoSDKTracking/NemoSDKTracking.h"
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[NemoSDKTracking sharedInstance] initTracking:application];
+    application.applicationIconBadgeNumber = 0;
+}
+```
+
+#### 4. Function Interface
+```objectivec
+[[NemoSDKTracking AppsFlyer] trackingEventLoginOnAF:@"userId" andAccount:@"account"];
+[[NemoSDKTracking AppsFlyer] trackingEventOnAF:@"event_abc" withValues:@{
+    @"key1": @"account1",
+    @"key2": @"account2"
+}];
+[[NemoSDKTracking AppsFlyer] trackingLevelArchiveEventOnAF:@"userId" andAccount:@"account" andLevel:@"12301"];
+```
 
 By using the NemoSDK for iOS you agree to these terms.
