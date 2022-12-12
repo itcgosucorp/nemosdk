@@ -27,6 +27,7 @@
 		CED10E4B2945FB010089D06F /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E452945FA1E0089D06F /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CED10E4C2945FB010089D06F /* NemoSDKTracking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E462945FA1E0089D06F /* NemoSDKTracking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CED10E4D2945FB010089D06F /* NemoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E472945FA1E0089D06F /* NemoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CED10E522946CA9D0089D06F /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E512946CA9C0089D06F /* AppsFlyerLib.framework */; };
 		CEE10E9D27E0918C00129EBC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE354F525B31CD00008F412 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +70,7 @@
 		CED10E452945FA1E0089D06F /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppAuth.xcframework; sourceTree = "<group>"; };
 		CED10E462945FA1E0089D06F /* NemoSDKTracking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDKTracking.xcframework; sourceTree = "<group>"; };
 		CED10E472945FA1E0089D06F /* NemoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDK.xcframework; sourceTree = "<group>"; };
-		CEDE6F1726A85C7F00075816 /* libGosuSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGosuSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED10E512946CA9C0089D06F /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
 		CEE10E4027E0901F00129EBC /* DemoSDK_AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSDK_AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEE354F525B31CD00008F412 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		CEF7BEBB25553C1200E22F64 /* TienKiemMobileDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TienKiemMobileDebug.entitlements; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 				8A83352821006DD4007200B0 /* SystemConfiguration.framework in Frameworks */,
 				8A83352621006DCC007200B0 /* MessageUI.framework in Frameworks */,
 				CED10E492945FA1E0089D06F /* NemoSDKTracking.xcframework in Frameworks */,
+				CED10E522946CA9D0089D06F /* AppsFlyerLib.framework in Frameworks */,
 				CED10E4A2945FA1E0089D06F /* NemoSDK.xcframework in Frameworks */,
 				CED10E482945FA1E0089D06F /* AppAuth.xcframework in Frameworks */,
 			);
@@ -179,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				CEE354F525B31CD00008F412 /* Accelerate.framework */,
-				CEDE6F1726A85C7F00075816 /* libGosuSDK.a */,
 				8AB17D98239FCD6D0057AED5 /* AuthenticationServices.framework */,
 				8A9A52CF212D1C6D0097A25C /* MediaPlayer.framework */,
 				8A83352521006DCC007200B0 /* MessageUI.framework */,
@@ -192,6 +193,7 @@
 		CED10E442945FA1E0089D06F /* NemoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				CED10E512946CA9C0089D06F /* AppsFlyerLib.framework */,
 				CED10E452945FA1E0089D06F /* AppAuth.xcframework */,
 				CED10E462945FA1E0089D06F /* NemoSDKTracking.xcframework */,
 				CED10E472945FA1E0089D06F /* NemoSDK.xcframework */,
@@ -421,6 +423,7 @@
 					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
 					"$(BUILD_DIR)/Debug-iphoneos/include/libs",
 					"$(BUILD_DIR)/Debug-iphoneos/include/Frameworks",
+					"$(PROJECT_DIR)/NemoSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
@@ -475,6 +478,7 @@
 					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
 					"$(BUILD_DIR)/Debug-iphoneos/include/libs",
 					"$(BUILD_DIR)/Debug-iphoneos/include/Frameworks",
+					"$(PROJECT_DIR)/NemoSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
@@ -597,6 +601,7 @@
 					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
 					"$(BUILD_DIR)/Debug-iphoneos/include/libs",
 					"$(BUILD_DIR)/Debug-iphoneos/include/Frameworks",
+					"$(PROJECT_DIR)/NemoSDK",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILD_DIR)/Debug-iphoneos/include/GinSDK",
