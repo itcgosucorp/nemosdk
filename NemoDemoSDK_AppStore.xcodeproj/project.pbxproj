@@ -28,6 +28,17 @@
 		CED10E4C2945FB010089D06F /* NemoSDKTracking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E462945FA1E0089D06F /* NemoSDKTracking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CED10E4D2945FB010089D06F /* NemoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E472945FA1E0089D06F /* NemoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CED10E522946CA9D0089D06F /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E512946CA9C0089D06F /* AppsFlyerLib.framework */; };
+		CED10E94294739A50089D06F /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E88294739A50089D06F /* nanopb.xcframework */; };
+		CED10E95294739A50089D06F /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E89294739A50089D06F /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		CED10E96294739A50089D06F /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E8A294739A50089D06F /* PromisesObjC.xcframework */; };
+		CED10E97294739A50089D06F /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E8B294739A50089D06F /* FirebaseAnalytics.xcframework */; };
+		CED10E98294739A50089D06F /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E8C294739A50089D06F /* FirebaseCoreDiagnostics.xcframework */; };
+		CED10E99294739A50089D06F /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E8D294739A50089D06F /* FirebaseInstallations.xcframework */; };
+		CED10E9A294739A50089D06F /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E8E294739A50089D06F /* FirebaseCore.xcframework */; };
+		CED10E9B294739A50089D06F /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E8F294739A50089D06F /* GoogleDataTransport.xcframework */; };
+		CED10E9C294739A50089D06F /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E90294739A50089D06F /* GoogleAppMeasurement.xcframework */; };
+		CED10E9D294739A50089D06F /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E91294739A50089D06F /* GoogleUtilities.xcframework */; };
+		CED10E9E294739A50089D06F /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED10E93294739A50089D06F /* FirebaseMessaging.xcframework */; };
 		CEE10E9D27E0918C00129EBC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE354F525B31CD00008F412 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +82,18 @@
 		CED10E462945FA1E0089D06F /* NemoSDKTracking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDKTracking.xcframework; sourceTree = "<group>"; };
 		CED10E472945FA1E0089D06F /* NemoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NemoSDK.xcframework; sourceTree = "<group>"; };
 		CED10E512946CA9C0089D06F /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
+		CED10E86294739A50089D06F /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		CED10E88294739A50089D06F /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
+		CED10E89294739A50089D06F /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		CED10E8A294739A50089D06F /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
+		CED10E8B294739A50089D06F /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		CED10E8C294739A50089D06F /* FirebaseCoreDiagnostics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseCoreDiagnostics.xcframework; sourceTree = "<group>"; };
+		CED10E8D294739A50089D06F /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseInstallations.xcframework; sourceTree = "<group>"; };
+		CED10E8E294739A50089D06F /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseCore.xcframework; sourceTree = "<group>"; };
+		CED10E8F294739A50089D06F /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleDataTransport.xcframework; sourceTree = "<group>"; };
+		CED10E90294739A50089D06F /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		CED10E91294739A50089D06F /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		CED10E93294739A50089D06F /* FirebaseMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseMessaging.xcframework; sourceTree = "<group>"; };
 		CEE10E4027E0901F00129EBC /* DemoSDK_AppStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSDK_AppStore-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEE354F525B31CD00008F412 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		CEF7BEBB25553C1200E22F64 /* TienKiemMobileDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TienKiemMobileDebug.entitlements; sourceTree = "<group>"; };
@@ -81,14 +104,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED10E9C294739A50089D06F /* GoogleAppMeasurement.xcframework in Frameworks */,
 				CED10E522946CA9D0089D06F /* AppsFlyerLib.framework in Frameworks */,
+				CED10E98294739A50089D06F /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
+				CED10E95294739A50089D06F /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
 				CEE10E9D27E0918C00129EBC /* Accelerate.framework in Frameworks */,
 				8AB17D99239FCD6D0057AED5 /* AuthenticationServices.framework in Frameworks */,
 				8A9A52D0212D1C6D0097A25C /* MediaPlayer.framework in Frameworks */,
+				CED10E9B294739A50089D06F /* GoogleDataTransport.xcframework in Frameworks */,
+				CED10E94294739A50089D06F /* nanopb.xcframework in Frameworks */,
 				8A83352A21006DDA007200B0 /* MobileCoreServices.framework in Frameworks */,
+				CED10E9A294739A50089D06F /* FirebaseCore.xcframework in Frameworks */,
 				8A83352821006DD4007200B0 /* SystemConfiguration.framework in Frameworks */,
 				8A83352621006DCC007200B0 /* MessageUI.framework in Frameworks */,
+				CED10E9E294739A50089D06F /* FirebaseMessaging.xcframework in Frameworks */,
+				CED10E99294739A50089D06F /* FirebaseInstallations.xcframework in Frameworks */,
 				CED10E492945FA1E0089D06F /* NemoSDKTracking.xcframework in Frameworks */,
+				CED10E9D294739A50089D06F /* GoogleUtilities.xcframework in Frameworks */,
+				CED10E96294739A50089D06F /* PromisesObjC.xcframework in Frameworks */,
+				CED10E97294739A50089D06F /* FirebaseAnalytics.xcframework in Frameworks */,
 				CED10E482945FA1E0089D06F /* AppAuth.xcframework in Frameworks */,
 				CED10E4A2945FA1E0089D06F /* NemoSDK.xcframework in Frameworks */,
 			);
@@ -193,6 +227,7 @@
 		CED10E442945FA1E0089D06F /* NemoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				CED10E85294739A50089D06F /* Firebase */,
 				CED10E512946CA9C0089D06F /* AppsFlyerLib.framework */,
 				CED10E452945FA1E0089D06F /* AppAuth.xcframework */,
 				CED10E462945FA1E0089D06F /* NemoSDKTracking.xcframework */,
@@ -200,6 +235,41 @@
 			);
 			path = NemoSDK;
 			sourceTree = SOURCE_ROOT;
+		};
+		CED10E85294739A50089D06F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CED10E86294739A50089D06F /* Firebase.h */,
+				CED10E87294739A50089D06F /* FirebaseAnalytics */,
+				CED10E92294739A50089D06F /* FirebaseMessaging */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		CED10E87294739A50089D06F /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				CED10E88294739A50089D06F /* nanopb.xcframework */,
+				CED10E89294739A50089D06F /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				CED10E8A294739A50089D06F /* PromisesObjC.xcframework */,
+				CED10E8B294739A50089D06F /* FirebaseAnalytics.xcframework */,
+				CED10E8C294739A50089D06F /* FirebaseCoreDiagnostics.xcframework */,
+				CED10E8D294739A50089D06F /* FirebaseInstallations.xcframework */,
+				CED10E8E294739A50089D06F /* FirebaseCore.xcframework */,
+				CED10E8F294739A50089D06F /* GoogleDataTransport.xcframework */,
+				CED10E90294739A50089D06F /* GoogleAppMeasurement.xcframework */,
+				CED10E91294739A50089D06F /* GoogleUtilities.xcframework */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		CED10E92294739A50089D06F /* FirebaseMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				CED10E93294739A50089D06F /* FirebaseMessaging.xcframework */,
+			);
+			path = FirebaseMessaging;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 

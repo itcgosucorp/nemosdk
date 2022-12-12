@@ -8,13 +8,17 @@
 		<data>
 		3SJLZqRzJFaEI3ePOngfHYOtuUE=
 		</data>
+		<key>Headers/FirebaseManager.h</key>
+		<data>
+		OELRK6k/cAI1dfDOA2ry0yAd5zI=
+		</data>
 		<key>Headers/NemoSDKTracking.h</key>
 		<data>
-		ixRS4D8XonppCJp7Jp4hv/iVNRw=
+		Ywd5l7hIeWKbNJwFMc+t+GKCAQE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ur1lBDW6Izki4H+wrJra1O57ZHw=
+		IOKApR8f3Uvxcp3iInw6GftBl38=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -30,11 +34,18 @@
 			Zy6RFvpuGODTbTjQmYr1f9jqZfRyHBJWsYXgIfy61bQ=
 			</data>
 		</dict>
+		<key>Headers/FirebaseManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dWeuoLlX3ZdG4R9fMUgXqgXg4PwTwg8fpwxjTgyhfG0=
+			</data>
+		</dict>
 		<key>Headers/NemoSDKTracking.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cGvzHRBXfHT6bLYIKCWq7YRNEXDXbVLevp86Z7S+2Wg=
+			Z7Q/nMIjyrgK2p9i43hxYnXtPbIRTYrLliOUDDz6vLo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
