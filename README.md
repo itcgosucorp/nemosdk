@@ -2,7 +2,7 @@
 
 **This guide shows you how to integrate your iOS app using the NemoSDK for iOS. The NemoSDK for iOS consists of the following component SDKs:**
   - [The NemoSDK Core](https://github.com/itcgosucorp/nemosdk-ios/releases)
-  - OpenId: [AppAuth.framework](https://github.com/itcgosucorp/nemosdk-ios/releases)
+  - Nemo OpenId: [AppAuth.framework](https://github.com/itcgosucorp/nemosdk-ios/releases)
   
 
 #### FEATURES:
