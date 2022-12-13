@@ -103,7 +103,7 @@
     <string>This identifier will be used to deliver personalized ads to you.</string>
   ```
 ##### 2. AppsFlyerLib Framework Linker
-<img width="470" alt="image" src="https://user-images.githubusercontent.com/94542020/206951658-1da52338-bcf6-474c-b074-f60f8668e7d9.png">
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/94542020/207208331-8eb41bd6-a3f2-4f58-b122-700b881951bc.png">
 
 ##### 3. Initialize NemoSDKTracking
 ```objectivec
@@ -142,7 +142,7 @@
   ```
   
 ##### 2. Firebase Framework Linker
-<img width="486" alt="image" src="https://user-images.githubusercontent.com/94542020/207207370-c3c72732-50b9-4514-8ee3-68d73b55765c.png">
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/94542020/207208287-654585c2-8892-4227-9da0-7176f3ddce81.png">
 
 ##### 3. Initialize NemoSDKTracking with Firebase
 ```objectivec
