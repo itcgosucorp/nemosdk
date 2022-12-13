@@ -29,6 +29,8 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
     NSLog(@"DEMLOG = 1");
     
     [[NemoSDK sharedInstance] sdkInit];
+    
+    [[NemoSDKTracking sharedInstance] applicationDelegate:self andApplication:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

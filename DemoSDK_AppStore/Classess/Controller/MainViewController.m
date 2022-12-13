@@ -47,6 +47,7 @@
 - (IBAction)btnUserInfo:(id)sender {
     NSLog(@"userInfo = %@", [[NemoSDK sharedInstance] getUserInfo]);
     NSLog(@"refreshToken = %@", [[NemoSDK sharedInstance] getRefreshToken]);
+    [self callTrackingFirebaseExample];
 }
 - (IBAction)btnLogout:(id)sender {
     [[NemoSDK sharedInstance] logout];
@@ -72,6 +73,15 @@
     //        return;
     
     //NSLog(@"w = %f, h = %f", size.width, size.height);
+}
+- (void) callTrackingFirebaseExample {
+    //tracking start trial
+    [[NemoSDKTracking Firebase] trackingEventOnFirebase:@"eventName" parameters:@{@"eventEventLogKey":@"eventEventLogValue"}];
+    [[NemoSDKTracking Firebase] trackingScreenOnFirebase:@"screenName" screenClass:@"screenClass"];
+    [[NemoSDKTracking Firebase] setUserPropertiesOnFirebase:@"userValue" forName:@"usernameName"];
+    //    subscribe
+    [[NemoSDKTracking Firebase] FirebaseSubscribeToTopic:@"topicName"];
+    [[NemoSDKTracking Firebase] FirebaseUnSubscribeToTopic:@"topicName"];
 }
 
 //=========== Payment Apple IAP ==============//
