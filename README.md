@@ -1,8 +1,8 @@
 # Nemo iOS SDK
 
 **This guide shows you how to integrate your iOS app using the NemoSDK for iOS. The NemoSDK for iOS consists of the following component SDKs:**
-  - The NemoSDK Core
-  - OpenId: AppAuth.framework
+  - [The NemoSDK Core](https://github.com/itcgosucorp/nemosdk-ios/releases)
+  - OpenId: [AppAuth.framework](https://github.com/itcgosucorp/nemosdk-ios/releases)
   
 
 #### FEATURES:
@@ -16,7 +16,7 @@
 
 - Embed NemoSDK latest version and Third party framework into your project
 - Some other libraries: 
-  - AppAuth.framework
+  - [AppAuth.framework](https://github.com/itcgosucorp/nemosdk-ios/releases)
 
 #### 1. Configure NemoSignIn in your project (default info.plist)
   ```xml
@@ -91,7 +91,7 @@
 ## Integrate NemoSDKTracking
 ### I. Tracking with Appsflyer
 - Embed NemoSDKTracking latest version and Third party framework into your project
-- Some other libraries: AppsFlyerLib.framework
+- Some other libraries: [AppsFlyerLib.framework](https://github.com/itcgosucorp/nemosdk-ios/releases)
 
 ##### 1. Configure NemoSignIn in your project (default info.plist)
 ```xml    
@@ -129,7 +129,7 @@
 <a name="integrate-nemosdktracking-firebase"></a>
 ### II. Tracking with Firebase
 - Embed NemoSDKTracking latest version and Third party framework into your project
-- Some other libraries: Firebase SDK
+- Some other libraries: [Firebase SDK](https://github.com/itcgosucorp/nemosdk-ios/releases)
 
 ##### 1. Configure NemoSignIn in your project (default info.plist)
 - Move GoogleService-Info.plist file into the root of your Xcode project. If prompted, select to add the config file to all targets.
