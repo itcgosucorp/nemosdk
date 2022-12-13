@@ -2,14 +2,17 @@
 All notable changes to this project will be documented in this file.
 
 ### Changed
+## [v2.0.2](https://github.com/itcgosucorp/nemosdk-ios/releases/tag/v2.0.2)
+#### NemoSDKTracking framework
+-  Add Tracking with Firebase
 
 ## [v2.0.1](https://github.com/itcgosucorp/nemosdk-ios/releases/tag/v2.0.1)
-### Nemo Login
-#### Configure NemoSignIn in your project (default info.plist)
+#### NemoSDK Framework
+##### Configure NemoSignIn in your project (default info.plist)
 1. NemoScope key replaced by AuthorizationScope
 2. NemoUrl key replaced by Issuer
 
-#### Initialize NemoSDK
+##### Initialize NemoSDK
 ```objectivec
 //AppDelegate.m
 [[NemoSDK sharedInstance] sdkInit:nil];
@@ -18,7 +21,7 @@ All notable changes to this project will be documented in this file.
 [NemoSDK sharedInstance].loginDelegate = self;
 ```
 
-#### Authorization Interface
+##### Authorization Interface
 ```objectivec
 [[NemoSDK sharedInstance] login:self andDelegate:self];
 [[NemoSDK sharedInstance] logoutBackground:self andDelegate:self];
@@ -26,5 +29,6 @@ All notable changes to this project will be documented in this file.
 [[NemoSDK sharedInstance] login];
 [[NemoSDK sharedInstance] logout];
 ```
-
+#### NemoSDKTracking framework
+-  Add Tracking with AppsFlyer
 And, Add Tracking functionality to the SDK. [See more](https://github.com/itcgosucorp/nemosdk-ios#integrate-nemosdktracking)
