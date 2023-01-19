@@ -4,3 +4,8 @@ framework module NemoSDKTracking {
   export *
   module * { export * }
 }
+
+module NemoSDKTracking.Swift {
+  header "NemoSDKTracking-Swift.h"
+  requires objc
+}
