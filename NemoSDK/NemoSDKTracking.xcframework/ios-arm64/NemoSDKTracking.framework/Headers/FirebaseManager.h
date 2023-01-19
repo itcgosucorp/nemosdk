@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 #import <FirebaseCore/FirebaseCore.h>
 #import <FirebaseAnalytics/FirebaseAnalytics.h>
-#import <FirebaseMessaging/FirebaseMessaging.h>
+//#import <FirebaseMessaging/FirebaseMessaging.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UIKit/UIKit.h>
 
@@ -23,10 +23,10 @@
 - (void) setUserIdOnFirebase:(NSString *)userID;
 //messaging
 - (void)applicationDelegate:(id) appDelegate andApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
-- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken;
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
-- (void) showInAppMessage:(NSDictionary *)userInfo;
+//- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken;
+//- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+//- (void) showInAppMessage:(NSDictionary *)userInfo;
 //sub
-- (void) FirebaseSubscribeToTopic:(NSString *)topic;
-- (void) FirebaseUnSubscribeToTopic:(NSString *)topic;
+//- (void) FirebaseSubscribeToTopic:(NSString *)topic;
+//- (void) FirebaseUnSubscribeToTopic:(NSString *)topic;
 @end

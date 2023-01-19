@@ -10,7 +10,11 @@
 		</data>
 		<key>Headers/FirebaseManager.h</key>
 		<data>
-		OELRK6k/cAI1dfDOA2ry0yAd5zI=
+		1URSXCUE8MZoCPguHE/AnPTJqDc=
+		</data>
+		<key>Headers/NemoSDKTracking-Swift.h</key>
+		<data>
+		oUCWllK5CEgGA3F5rjCjUbtXgvc=
 		</data>
 		<key>Headers/NemoSDKTracking.h</key>
 		<data>
@@ -18,11 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IOKApR8f3Uvxcp3iInw6GftBl38=
+		7MW8FR5Ntts2oCFJt1EgLbIbutE=
+		</data>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		iCVxf3l/qkKn9hIGj0augkhc1hA=
+		</data>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		ywrj4Jb7WPViykLNWRiQEIwQ3Ws=
+		</data>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		Wnmhef+2uo4sffZm2CWUY+r6bL4=
+		</data>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		ywrj4Jb7WPViykLNWRiQEIwQ3Ws=
+		</data>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		pUHsX6UKfzzruYnBs6NI4U2SG9c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ybRwArRFpk6KVC4McLgWvBzceIo=
+		OlC7eAHx/n0vt5f7F0Q123Rca2Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -38,7 +62,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dWeuoLlX3ZdG4R9fMUgXqgXg4PwTwg8fpwxjTgyhfG0=
+			MdP2YD1S5KbBeiWYbq3NDNMOfNhcYoKDbEbSULe179U=
+			</data>
+		</dict>
+		<key>Headers/NemoSDKTracking-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YES0oXWrUYPiWnn3pDMFlVY2+kPmqGrO3IWXzKqtJzI=
 			</data>
 		</dict>
 		<key>Headers/NemoSDKTracking.h</key>
@@ -48,11 +79,46 @@
 			Z7Q/nMIjyrgK2p9i43hxYnXtPbIRTYrLliOUDDz6vLo=
 			</data>
 		</dict>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J/HQN4raX/imAIHX6PQtOjcH9UrsYm/Tkq/hZ5JJq0k=
+			</data>
+		</dict>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uNl3sOiXCeidJLs9/xM5H61VLBTmFh9b1M+QW4pF5Yo=
+			</data>
+		</dict>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YfJGBWOjm3YaG4IprSsNEhenVhCGMDOEAhGbL6NCc1c=
+			</data>
+		</dict>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uNl3sOiXCeidJLs9/xM5H61VLBTmFh9b1M+QW4pF5Yo=
+			</data>
+		</dict>
+		<key>Modules/NemoSDKTracking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qf0U0pYLtJnzQX3LL2v1Z6c7CvmL21WB8L9keso1Qoc=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uf4NV99i8/iz9xocR7T6xEpR3lonux4Mm8/2NRn0N1o=
+			HQhtidiInpdOnh0bvHv40Qn/tHEGBosl1T3zX+Pf4uQ=
 			</data>
 		</dict>
 	</dict>
