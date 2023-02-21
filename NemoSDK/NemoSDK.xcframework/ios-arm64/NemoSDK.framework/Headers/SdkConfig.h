@@ -40,6 +40,7 @@
 @property (nonatomic,strong) NSString *issuer;
 @property (nonatomic,strong) NSString *endSessionEndpoint;
 @property (nonatomic,strong) NSString *tokenRevocationEndpoint;
+@property (nonatomic,strong) NSString *tokenIntrospectionEndpoint;
 @property (nonatomic,strong) NSArray *nemoScope;
 
 
