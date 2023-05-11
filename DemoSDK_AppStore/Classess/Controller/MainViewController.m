@@ -80,8 +80,8 @@
     [[NemoSDKTracking Firebase] trackingScreenOnFirebase:@"screenName" screenClass:@"screenClass"];
     [[NemoSDKTracking Firebase] setUserPropertiesOnFirebase:@"userValue" forName:@"usernameName"];
     //    subscribe
-    [[NemoSDKTracking Firebase] FirebaseSubscribeToTopic:@"topicName"];
-    [[NemoSDKTracking Firebase] FirebaseUnSubscribeToTopic:@"topicName"];
+//    [[NemoSDKTracking Firebase] FirebaseSubscribeToTopic:@"topicName"];
+//    [[NemoSDKTracking Firebase] FirebaseUnSubscribeToTopic:@"topicName"];
 }
 
 //=========== Payment Apple IAP ==============//
